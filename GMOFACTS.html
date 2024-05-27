@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <title>GMO Facts</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Link your CSS file here -->
+    <style>
+  body {
+    font-family: Arial, sans-serif;
+    background-image: url('fbg.jfif'); /* Replace 'your-image-url.jpg' with the URL of your image */
+    background-size: cover; /* Adjust the background size */
+    background-position: center; /* Center the background image */
+    margin: 0;
+    padding: 0;
+}
+
+
+        header {
+        background-image: linear-gradient(135deg, #fdfcfb 0%, #e2d1c3 100%);
+            padding: 0px;
+                box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); /* Adding bottom shadow */
+
+        }
+
+        nav ul {
+            justify-content: space-between;/*DETAIL*/
+            list-style: none;
+            margin: 0;
+            padding: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: flex-start; /* Align items to the start */
+            text-transform: uppercase;
+            font-weight: bold;
+            font-size: 20px;
+        }
+
+nav ul li:last-child {
+    margin-left: auto; /* DETAIL Push the last item to the right */
+}
+
+        nav .logo {
+            display: flex;
+            align-items: center;
+            height: 100%; /* Ensure it aligns vertically */
+            margin-right: 20px; /* Add some space between the logo and the nav items */
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #000;
+            font-weight: bold;
+            padding: 0 10px; /* Add padding for spacing */
+            transition: color 0.3s ease; /* Smooth transition for hover effect */
+        }
+
+        nav a:hover {
+            color: whitesmoke; /* Change color on hover */
+            background-color: black; /* Change background color on hover */
+            background-color: black; /* Background color for the active link */
+            background-size: 150% 150%; /* Increase background size on hover */
+            border-radius: 10px; /* Add border radius on hover */
+
+        }
+
+        nav a.active {
+            font-weight: 900;
+            color: #555;
+        }
+
+        nav .logo img {
+            height: 60px;
+            width: auto;
+        }   
+        main {
+            padding: 50px;
+        }
+         h1 {
+            background-color: #EDEEC2; /* Set background color */
+            /* OR */
+            background-image: url('your-image-url.jpg'); /* Set background image */
+            width: 500px;
+            text-align: center;
+            font-family: fantasy;
+            font-weight: 50px;
+            font-size: 50px;
+            background-size: cover; /* Adjust background image size */
+            background-position: center;
+            padding: 5px;
+            margin: auto;
+            margin-bottom: 20px;
+            border-radius: 5px; /* Center the background image */
+            /* Add any other styles you want for the background */
+        }
+
+        .fact:hover, .fact1:hover {
+            transform: scale(1.05); /* Zoom effect on hover */
+            transition: transform 0.3s ease; /* Smooth transition */
+        }
+
+        .fact {
+            background-color: #EDEEC2;
+            padding: 20px;
+            margin-bottom: 20px;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        .fact1 {
+            background-color: #D0E4AC;
+            padding: 20px;
+            margin-bottom: 20px;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        .fact h2 {
+            font-family: serif;
+            margin-top: 0;
+            color: black;
+        }
+        .fact p {
+            font-size: 18px;
+            font-family: serif;
+            margin-bottom: 0;
+            color: black;
+        }
+        .fact1 h2 {
+            font-family: serif;
+            margin-top: 0;
+            color: black;
+        }
+        .fact1 p {
+            font-size: 18px;
+            font-family: serif;
+            margin-bottom: 0;
+            color: black;
+        }
+        .fact, .fact1 {
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3); /* Add shadow */
+            border-radius: 5px; /* Add border radius */
+        }
+        footer {
+            background-color: floralwhite;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .footer-content {
+            display: flex;
+            justify-content: space-around;
+        }
+
+        .contact-info, .social-media {
+            margin-bottom: 20px;
+        }
+
+        .contact-info h2, .social-media h2 {
+            margin-bottom: 10px;
+        }
+
+        .contact-info p {
+            margin: 5px 0;
+        }
+
+        .social-media ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .social-media ul li {
+            display: inline;
+            margin-right: 10px;
+        }
+
+        .social-media ul li:last-child {
+            margin-right: 0;
+        }
+
+        .social-media a {
+            text-decoration: none;
+            color: #000;
+        }
+
+        .social-media a:hover {
+            color: #555;
+        }
+        .span-red {
+            color: darkred;
+            font-weight: 900; /* Adjust font weight */
+        }
+
+    </style>
+</head>
+<body>
+<header>
+    <nav>
+        <ul>
+            <li class="logo"><a href="index.html"><img src="favicon.ico" alt="GMO Logo"></a></li>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="WIG.html">What is <span style="color: darkred;">GMO?</span></a></li>
+            <li><a href="#" class="active"><span style="color: darkred;">GMO</span> Facts</a></li>
+            <li><a href="GMOSCi.html"><span style="color: darkred;">GMO</span> Science</a></li>
+            <li><a href="risk.html"><span style="color: darkred;">Risk</span> Status</a></li>
+            <li><a href="about.html"><i class="fas fa-info-circle"></i></a></li>
+        </ul>
+    </nav>
+</header>
+    
+    <main>
+        <section class="facts">
+            <h1><span class="span-red">GMO </span> FACTS</h1>
+            <div class="fact1">
+                <h2>WHAT IS <span class="span-red">GMO?</span> </h2>
+                <p>Under the Non-GMO Project Standard, a genetically modified organism (GMO) is an organism to 
+which biotechnology has been applied. This creates combinations of plant, animal, bacteria and 
+virus genes that do not occur in nature or through traditional crossbreeding methods.</p>
+            </div>
+            <div class="fact">
+                <h2>WHICH FOODS MIGHT CONTAIN <span class="span-red">GMO'S?</span> </h2>
+                <p>Most packaged and processed foods contain ingredients  from genetically modified corn, soy, canola, and sugar beet.The Non-GMO Project also flags animal-derived products like eggs, milk, meat, honey, and seafood as high risk due to  the prevalence of genetically engineered ingredients in animal feed.</p>
+            </div>
+            <div class="fact1">
+                <h2>ARE <span class="span-red">GMO'S</span> LABALED?</h2>
+                <p>Sixty-five countries, including Australia, Japan, and all EU nations, require GMO labeling, but Canada does not. The USDA's National Bioengineered Food Disclosure Standard mandates some GMO labeling in the U.S., but exemptions limit full transparency.</p>
+            </div>
+            <div class="fact">
+                <h2>WHAT ARE THE IMPAPCTS OF <span class="span-red">GMO'S</span> ON THE ENVIRONMENT?</h2>
+                <p>Most genetically modified crops are engineered for herbicide tolerance, leading to a fifteenfold increase in herbicide use over 20 years. This harms biodiversity and creates resistant “superweeds” and “superbugs,” necessitating more toxic chemicals. Developed by major chemical companies, GMOs are an extension of chemical agriculture with unknown long-term impacts and cannot be recalled once released.</p>
+            </div>
+            <div class="fact1">
+                <h2>HOW DO <span class="span-red">GMO'S</span> AFFECT FARMER?</h2>
+                <p>Biotechnology companies patent genetically engineered seeds, limiting their use and distribution. Restrictive licenses prevent farmers from saving seeds, making them dependent on corporations for seeds and herbicides. This reliance threatens farmer sovereignty and national food security.</p>
+            </div>
+            <div class="fact">
+                <h2>ARE <span class="span-red">GMO'S  </span> SAFE??</h2>
+                <p>In the absence of credible, independent, long-term feeding studies, the safety of GMOs is unknown. </p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="contact-info">
+                <h2>Contact Us</h2>
+                <p>Email: ITGMO@gmail.com</p>
+                <p>Phone: 123-456-7890</p>
+            </div>
+            <div class="social-media">
+                <h2>Follow Us</h2>
+                <ul>
+                    <li><a href="#">Facebook</a></li>
+                    <li><a href="#">Twitter</a></li>
+                    <li><a href="#">Instagram</a></li>
+                </ul>
+            </div>
+        </div>
+        <p>&copy; 2024 Genetically Modified Organisms. All rights reserved.</p>
+    </footer>
+</body>
+</html>

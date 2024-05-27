@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="icon" href="favicon.ico">
+    <title>What is GMO?</title>
+    <style type="text/css">
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+        body {
+    margin: 0;
+    font-family: "Inter", sans-serif;
+    background-color: #f5f5f5;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+header {
+background-image: linear-gradient(135deg, #fdfcfb 0%, #e2d1c3 100%);
+    padding: 0;
+                    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); /* Adding bottom shadow */
+
+}
+
+nav ul {
+    justify-content: space-between;/*DETAIL*/
+    list-style: none;
+    margin: 0;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start; /* Align items to the start */
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 20px;
+}
+nav ul li:last-child {
+    margin-left: auto; /* DETAIL Push the last item to the right */
+}
+
+
+nav .logo {
+    display: flex;
+    align-items: center;
+    height: 100%; /* Ensure it aligns vertically */
+    margin-right: 20px; /* Add some space between the logo and the nav items */
+}
+
+nav a {
+    text-decoration: none;
+    color: #000;
+    font-weight: bold;
+    padding: 0 10px; /* Add padding for spacing */
+    transition: color 0.3s ease; /* Smooth transition for hover effect */
+}
+
+nav a:hover {
+    color: whitesmoke; /* Change color on hover */
+    background-color: black; /* Change background color on hover */
+    background-color: black; /* Background color for the active link */
+    background-size: 150% 150%; /* Increase background size on hover */
+    border-radius: 10px; /* Add border radius on hover */
+
+}
+
+nav a.active {
+    font-weight: 900;
+    color: #555;
+}
+
+nav .logo img {
+    height: 60px;
+    width: auto;
+}
+
+main {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding: 0;
+}
+
+.section-what-is-gmo, .section-building-blocks, .section-traditional-breeding {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0;
+    padding-left: 3.5%;
+    background-color: #fff;
+    border-radius: 0;
+    box-shadow: none;
+
+}
+.section-what-is-gmo, .section-building-blocks, .section-traditional-breeding {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0;
+    padding-left: 3.5%;
+    background-color: #fff;
+    border-radius: 0;
+    box-shadow: none;
+}
+
+.text-content {
+    flex: 1;
+    margin: 0;
+    padding-right: 50px; /* Add padding to the right */
+}
+.text-content h1
+{
+font-size: 40px;
+font-family: Georgia;
+}
+
+.image-content, .image-content1 {
+    max-width: 45%; /* Adjust the max-width for the image content */
+}
+
+.image-content {
+    max-width: 50%;
+    transition: transform 0.3s ease; /* Add transition for smooth effect */
+}
+
+.image-content:hover {
+    transform: scale(1.10); /* Increase scale on hover */
+}
+
+.image-content img {
+    margin-top: 30px;
+    margin-bottom: 90px;
+    max-width: 75%;
+    margin-left: 10px; /* Pushes the image to the right */
+    margin-right: 5px; /* Adds some space between the image and the text */
+    height: 500px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add shadow to the image */
+}
+
+.section-building-blocks{
+background-image: linear-gradient(135deg, #fdfcfb 0%, #e2d1c3 100%);
+}
+.section-what-is-gmo,.section-traditional-breeding{
+background: #FFEFBA;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #FFFFFF, #FFEFBA);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #FFFFFF, #FFEFBA); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+footer {
+    background-color: floralwhite;
+    padding: 20px;
+    text-align: center;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-around;
+}
+
+.contact-info, .social-media {
+    margin-bottom: 20px;
+}
+
+.contact-info h2, .social-media h2 {
+    margin-bottom: 10px;
+}
+
+.contact-info p {
+    margin: 5px 0;
+}
+
+.social-media ul {
+    list-style: none;
+    padding: 0;
+}
+
+.social-media ul li {
+    display: inline;
+    margin-right: 10px;
+}
+
+.social-media ul li:last-child {
+    margin-right: 0;
+}
+
+.social-media a {
+    text-decoration: none;
+    color: #000;
+}
+
+.social-media a:hover {
+    color: #555;
+}
+        .span-red {
+            color: darkred;
+            font-weight: 900; /* Adjust font weight */
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+            <li class="logo"><a href="index.html"><img src="favicon.ico" alt="GMO Logo"></a></li>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="WIG.html" class="active">What is <span style="color: darkred;">GMO?</span></a></li>
+            <li><a href="GMOFACTS.html" ><span style="color: darkred;">GMO</span> Facts</a></li>
+            <li><a href="GMOSCi.html"><span style="color: darkred;">GMO</span> Science</a></li>
+            <li><a href="risk.html"><span style="color: darkred;">Risk</span> Status</a></li>
+            <li><a href="about.html"><i class="fas fa-info-circle"></i></a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="section-what-is-gmo">
+            <div class="image-content">
+                <img src="GMO.jpg" alt="What is GMO Illustration">
+            </div>
+            <div class="text-content">
+                <h1>What is<span class="span-red"> GMO?</span></h1>
+                <p>
+                    A GMO, or genetically modified organism, is a living plant, animal or microorganism that has been subjected to biotechnology.
+                </p>
+                <p>
+                    GMO developers use biotechnology to alter that living organism's fundamental characteristics. Biotechnology includes techniques such as using synthetic genetic sequences to change the organism's genetic material (i.e., DNA or RNA), or forcing the combination of very unrelated organisms that would not normally reproduce in nature.
+                </p>
+                <p>
+                    When biotechnology is applied to a living organism, the result is a GMO. While GMOs are used across many industries, the Non-GMO Project's areas of concern are food, personal care products and animal feed.
+                </p>
+                <p>
+                    Some examples of >GMOs include:
+                </p>
+                <ul>
+                    <li>Corn containing bacterial genes that cause the plant to produce an insecticide</li>
+                    <li>Fast-growing Atlantic salmon with genes from a Chinook salmon and an ocean pout</li>
+                    <li>Soybeans with edited genes which increase the amount of oleic acid</li>
+                    <li>Hens with an inserted lethality gene that can kill their male offspring before they hatch</li>
+                </ul>
+            </div>
+        </section>
+        <section class="section-building-blocks">
+            <div class="text-content">
+                <h1>The Building Blocks of Life</h1>
+                <p>
+                    Every living thing on Earth is made up of cells. Cells use the information stored in genetic material to perform functions essential to the creature's life cycle. In this way, genetic material impacts how an organism appears, grows, lives and dies by providing the "building blocks of life" — the DNA.
+                </p>
+                <p>
+                    DNA is housed inside delicate and complex cells, protected from external forces that can damage or destroy it and harm the organism. Because of these protective structures, altering genetic material without harming the organism is very difficult to accomplish. GMO developers use biotechnology techniques to bypass a cell's natural protective mechanisms without destroying the organism. Biotechnology can be used to create gene sequences that have never before occurred in nature, producing organisms that have never been part of the human diet.
+                </p>
+            </div>
+            <div class="image-content1">
+                <img src="image4.png" alt="Building Blocks Illustration">
+            </div>
+        </section>
+        <section class="section-traditional-breeding">
+             <div class="image-content">
+                <img src="breeding.jpg" alt="Traditional Breeding Illustration">
+            </div>
+            <div class="text-content">
+                <h1><span class="span-red">GMOs</span> Are Not Made Through</br> Traditional Breeding</h1>
+                <p>
+                    Humans have practiced agriculture for over 12,000 years, selecting and breeding living organisms such as crops and animals to meet their needs. Traditional selection and breeding techniques include engaging and exploiting natural reproduction through processes such as cross-pollination and some modern laboratory techniques such as cell culturing, embryo rescue and chemical-induced mutagenesis.
+                </p>
+                <p>
+                    However, traditional techniques do not involve biotechnology. Biotechnology is a relatively recent development that has only been around since the 1970s.GMO developers use biotechnology to manipulate a target organism's DNA or RNA or overcome natural reproductive barriers. These processes result in a wide range of GMOs, including crops containing foreign DNA that makes them produce an insecticide, withstand weed killer applications, or alters their nutritional profile, or plants and animals containing edits in their genome that change growth rate and appearance. Biotechnology can even be used to limit an animal's ability to reproduce. Please visit our blog for more information on the wide variety of GMOs currently on the market.
+                </p>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="footer-content">
+            <div class="contact-info">
+                <h2>Contact Us</h2>
+                <p>Email: ITGMO@gmail.com</p>
+                <p>Phone: 123-456-7890</p>
+            </div>
+            <div class="social-media">
+                <h2>Follow Us</h2>
+                <ul>
+                    <li><a href="#">Facebook</a></li>
+                    <li><a href="#">Twitter</a></li>
+                    <li><a href="#">Instagram</a></li>
+                </ul>
+            </div>
+        </div>
+        <p>&copy; 2024 Genetically Modified Organisms. All rights reserved.</p>
+    </footer>
+</body>
+</html>

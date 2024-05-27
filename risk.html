@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="icon" href="favicon.ico">
+    <title>Risk Status</title>
+    <style type="text/css">
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+        body {
+            margin: 0;
+            font-family: "Inter", sans-serif;
+            background-image: url('STS.jpg'); /* Add background image */
+            background-size: cover;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+            background-attachment: fixed; /* Fixed background image */
+            background-position: center;
+            background-repeat: no-repeat;
+            background-color: rgba(255, 255, 255, 0.9); /* Slightly transparent white background */
+        }
+
+        header {
+            background-image: linear-gradient(135deg, #fdfcfb 0%, #e2d1c3 100%);
+            padding: 0;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); /* Adding bottom shadow */
+        }
+
+        nav ul {
+            justify-content: space-between;/*DETAIL*/
+            list-style: none;
+            margin: 0;
+            padding: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: flex-start; /* Align items to the start */
+            text-transform: uppercase;
+            font-weight: bold;
+            font-size: 20px;
+        }
+nav ul li:last-child {
+    margin-left: auto; /* DETAIL Push the last item to the right */
+}
+
+        nav .logo {
+            display: flex;
+            align-items: center;
+            height: 100%; /* Ensure it aligns vertically */
+            margin-right: 20px; /* Add some space between the logo and the nav items */
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #000;
+            font-weight: bold;
+            padding: 0 10px; /* Add padding for spacing */
+            transition: color 0.3s ease; /* Smooth transition for hover effect */
+        }
+
+        nav a:hover {
+            color: whitesmoke; /* Change color on hover */
+            background-color: black; /* Change background color on hover */
+            background-size: 150% 150%; /* Increase background size on hover */
+            border-radius: 10px; /* Add border radius on hover */
+        }
+
+        nav a.active {
+            font-weight: 900;
+            color: #555;
+        }
+
+        nav .logo img {
+            height: 60px;
+            width: auto;
+        }
+
+        main {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            padding: 0;
+        }
+        .risk-status, .section-building-blocks, .section-traditional-breeding {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin: 20px 3.5%;
+            padding: 20px;
+            background-color: #fff; /* Set the background color */
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Adding shadow */
+            opacity: 0.9; /* Adjust the opacity for transparency */
+        }
+
+        .section-building-blocks .text-content h1
+        {
+            font-size: 40px;
+            font-family: Georgia;
+            margin-left: 50px;
+            opacity: 100%;
+        }
+        .section-building-blocks .text-content p 
+        {
+            opacity: 100%;
+            margin-left: 50px;
+        }
+
+        .text-content {
+            flex: 1;
+            margin: 0;
+            padding-right: 50px; /* Add padding to the right */
+        }
+
+        .text-content h1 {
+            opacity: 100%;
+            font-size: 40px;
+            font-family: Georgia;
+        }
+
+        .image-content {
+            max-width: 45%; /* Adjust the max-width for the image content */
+        }
+
+        .image-content {
+            max-width: 50%;
+            transition: transform 0.3s ease; /* Add transition for smooth effect */
+        }
+
+        .image-content:hover {
+            transform: scale(1.10); /* Increase scale on hover */
+        }
+
+        .image-content img {
+            margin-top: 30px;
+            margin-bottom: 90px;
+            margin-left: 50px;
+            max-width: 75%;
+            width: 100%; /* Ensure the image takes full width */
+            height: auto; /* Maintain aspect ratio */
+            border-radius: 8px;
+        }
+
+        .section-building-blocks {
+            background-image: linear-gradient(135deg, #fdfcfb 0%, #e2d1c3 100%);
+        }
+
+        .risk-status, .section-traditional-breeding {
+            background-color: floralwhite;
+        }
+
+        footer {
+            background-color: floralwhite;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .footer-content {
+            display: flex;
+            justify-content: space-around;
+        }
+
+        .contact-info, .social-media {
+            margin-bottom: 20px;
+        }
+
+        .contact-info h2, .social-media h2 {
+            margin-bottom: 10px;
+        }
+
+        .contact-info p {
+            margin: 5px 0;
+        }
+
+        .social-media ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .social-media ul li {
+            display: inline;
+            margin-right: 10px;
+        }
+
+        .social-media ul li:last-child {
+            margin-right: 0;
+        }
+
+        .social-media a {
+            text-decoration: none;
+            color: #000;
+        }
+
+        .social-media a:hover {
+            color: #555;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+            <li class="logo"><a href="index.html"><img src="favicon.ico" alt="GMO Logo"></a></li>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="WIG.html">What is <span style="color: darkred;">GMO?</span></a></li>
+            <li><a href="GMOFACTS.html"><span style="color: darkred;">GMO</span> Facts</a></li>
+            <li><a href="GMOSCi.html"><span style="color: darkred;">GMO</span> Science</a></li>
+            <li><a href="risk.html"  class="active"><span style="color: darkred;">Risk</span> Status</a></li>
+            <li><a href="about.html"><i class="fas fa-info-circle"></i></a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="risk-status">
+            <div class="image-content">
+                <img src="cornImg.png" alt="Risk Status Illustration">
+            </div>
+            <div class="text-content">
+                <h1>How does risk status preserve the <br> non-<span style="color: darkred;">GMO</span> supply chain?</h1>
+                <p>
+                    To effectively build and preserve the non-GMO food supply, the Non-GMO Project Standard uses risk statuses for crops, ingredients, and inputs based on how likely each is to be a GMO. Risk status helps third-party technical administrators (TAs) evaluate products by giving greater scrutiny to those more likely to be GMOs.
+                </p>
+                <p>
+                    The Non-GMO Project determines which crops have the highest risk of being GMOs using various criteria, including the following:
+                </p>
+                <ul>
+                    <li>The current and potential uses of the GMO (e.g., used as human food or animal feed)</li>
+                    <li>The acreage planted</li>
+                    <li>The GMO's presence in the supply chain</li>
+                    <li>The GMO's potential to cross-pollinate with non-GMO crops</li>
+                </ul>
+                <p>
+                    The Standard's risk statuses include high risk, monitored risk, and low risk.
+                </p>
+            </div>
+        </section>
+        <section class="section-building-blocks">
+            <div class="text-content">
+                <h1>High <span style="color: darkred;">Risk</span></h1>
+                <p>
+                    The high-risk designation in GMO evaluation signifies the widespread presence of genetically modified organisms (GMOs) in a particular crop or product, alerting stakeholders to potential contamination. For example, 93% of U.S. corn is genetically modified, making it highly likely that corn-based ingredients are derived from GMOs unless specifically sourced otherwise.
+                </p>
+                <p>
+                    During the verification process, Technical Administrators (TAs) closely examine high-risk ingredients in products to ensure compliance with non-GMO standards, especially when these ingredients make up 0.5% or more of the product by weight. Ingredients present in smaller amounts are classified as micro ingredients and have different evaluation requirements.
+                </p>
+                <p>
+                    Animal-derived ingredients are high-risk due to the common use of GMO crops in animal feed. Verification involves ensuring that the major high-risk components of the feed are non-GMO. Genetically modified animals and their offspring are prohibited. Microorganisms, such as algae, bacteria, and yeast, also pose verification challenges because they can be genetically modified or grown on media derived from high-risk crops like GMO corn or sugar beets.
+                </p>
+            </div>
+            <div class="image-content">
+                <img src="dnaImg.png" alt="High Risk Illustration">
+            </div>
+        </section>
+        <section class="section-traditional-breeding">
+            <div class="image-content">
+                <img src="ahos.png" alt="Monitored Risk Illustration">
+            </div>
+            <div class="text-content">
+                <h1>Monitored <span style="color: darkred;">Risk</span></h1>
+                <p>
+                    The Monitored-Risk List is part of the Non-GMO Project's efforts to track biotechnology industry developments. Crops and ingredients on the Monitored-Risk List generally have genetically modified versions in existence that are not yet widely commercially available. Known GMO contamination can also impact a crop's risk status.
+                </p>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="footer-content">
+            <div class="contact-info">
+                <h2>Contact Us</h2>
+                <p>Email: ITGMO@gmail.com</p>
+                <p>Phone: 123-456-7890</p>
+            </div>
+            <div class="social-media">
+                <h2>Follow Us</h2>
+                <ul>
+                    <li><a href="#">Facebook</a></li>
+                    <li><a href="#">Twitter</a></li>
+                    <li><a href="#">Instagram</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

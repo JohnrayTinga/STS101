@@ -1,0 +1,192 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+body {
+    margin: 0;
+    font-family: "Inter", sans-serif;
+    background-color: #f5f5f5;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+background-image: linear-gradient(135deg, #fdfcfb 0%, #e2d1c3 100%);
+    padding: 0px;
+                box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); /* Adding bottom shadow */
+
+}
+
+nav ul {
+    justify-content: space-between;/*DETAIL*/
+    list-style: none;
+    margin: 0;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start; /* Align items to the start */
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 20px;
+}
+nav ul li:last-child {
+    margin-left: auto; /* DETAIL Push the last item to the right */
+}
+
+
+nav .logo {
+    display: flex;
+    align-items: center;
+    height: 100%; /* Ensure it aligns vertically */
+    margin-right: 20px; /* Add some space between the logo and the nav items */
+}
+
+nav a {
+    text-decoration: none;
+    color: #000;
+    font-weight: bold;
+    padding: 0 10px; /* Add padding for spacing */
+    transition: color 0.3s ease; /* Smooth transition for hover effect */
+}
+
+nav a:hover {
+    color: whitesmoke; /* Change color on hover */
+    background-color: black; /* Change background color on hover */
+    background-color: black; /* Background color for the active link */
+    background-size: 150% 150%; /* Increase background size on hover */
+    border-radius: 10px; /* Add border radius on hover */
+
+}
+
+nav a.active {
+    font-weight: 900;
+    color: #555;
+}
+
+nav .logo img {
+    height: 60px;
+    width: auto;
+}
+
+main {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.hero {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0;
+    padding-left: 75px;
+    background-image: linear-gradient(135deg, #fdfcfb 0%, #e2d1c3 100%);    margin: 0;
+    border-radius: 0;
+    box-shadow: none;
+}
+
+.text-content {
+    max-width: 50%;
+    margin-left: 5%;
+}
+
+.text-content .above-title {
+    margin-top: 100px;
+    width: 50%;
+    height: 35px;
+    margin-bottom: 20px;
+    border-radius: 20px;
+}
+
+.text-content h1 {
+    font-size: 2em;
+    font-family: georgia;
+    margin: 0;
+    text-transform: uppercase;
+}
+
+.text-content p {
+    font-size: 1em;
+    line-height: 1.5;
+}
+
+.see-more-button {
+    display: inline-block;
+    margin-top: 10px;
+    margin-bottom: 100px;
+    padding: 5px 275px;
+    background: url('aboveTitle.jpg') no-repeat center center;
+    background-size: cover;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: opacity 0.3s ease;
+}
+
+.see-more-button:hover {
+    opacity: 0.8;
+}
+
+.image-content {
+    max-width: 50%;
+    transition: transform 0.3s ease; /* Add transition for smooth effect */
+}
+
+.image-content:hover {
+    transform: scale(1.10); /* Increase scale on hover */
+}
+
+.image-content img {
+    margin-top: 75px;
+    margin-bottom: 90px;
+    max-width: 75%;
+    margin-left: 200px; /* Pushes the image to the right */
+    margin-right: 50px; /* Adds some space between the image and the text */
+    height: 500px;
+    border-radius: 8px;
+}
+
+footer {
+    background-color: floralwhite;
+    padding: 20px;
+    text-align: center;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-around;
+}
+
+.contact-info, .social-media {
+    margin-bottom: 20px;
+}
+
+.contact-info h2, .social-media h2 {
+    margin-bottom: 10px;
+}
+
+.contact-info p {
+    margin: 5px 0;
+}
+
+.social-media ul {
+    list-style: none;
+    padding: 0;
+}
+
+.social-media ul li {
+    display: inline;
+    margin-right: 10px;
+}
+
+.social-media ul li:last-child {
+    margin-right: 0;
+}
+
+.social-media a {
+    text-decoration: none;
+    color: #000;
+}
+
+.social-media a:hover {
+    color: #555;
+}

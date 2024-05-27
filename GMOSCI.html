@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="icon" href="favicon.ico">
+    <title>GMO Science</title>
+    <link rel="stylesheet" href="styles.css">
+    <style type="text/css">
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+        body {
+            margin: 0;
+            font-family: "Inter", sans-serif;
+            font-weight: 500;
+            background-color: #f5f5f5;
+            background-image: url('body.jpg'); /* Add your background image here */
+            background-size: cover; /* Ensure the image covers the entire background */
+            background-position: center; /* Center the background image */
+            background-repeat: no-repeat; /* Prevent the image from repeating */
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+header {
+    background-color: rgba(224, 224, 224, 0.8); /* Make header slightly transparent */
+    padding: 0;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); /* Adding bottom shadow */
+}
+
+        nav ul {
+            justify-content: space-between;/*DETAIL*/
+            list-style: none;
+            margin: 0;
+            padding: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: flex-start; /* Align items to the start */
+            text-transform: uppercase;
+            font-weight: bold;
+            font-size: 20px;
+        }
+
+nav ul li:last-child {
+    margin-left: auto; /* DETAIL Push the last item to the right */
+}
+
+        nav .logo {
+            display: flex;
+            align-items: center;
+            height: 100%; /* Ensure it aligns vertically */
+            margin-right: 20px; /* Add some space between the logo and the nav items */
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #000;
+            font-weight: bold;
+            padding: 0 10px; /* Add padding for spacing */
+            transition: color 0.3s ease; /* Smooth transition for hover effect */
+        }
+
+        nav a:hover {
+            color: whitesmoke; /* Change color on hover */
+            background-color: black; /* Change background color on hover */
+            border-radius: 10px; /* Add border radius on hover */
+        }
+
+        nav a.active {
+            font-weight: 900;
+            color: #555;
+        }
+
+        nav .logo img {
+            height: 60px;
+            width: auto;
+        }
+
+main {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding: 0;
+    background-color: rgba(255, 239, 213, 0.8); /* Make main section slightly transparent */
+}
+
+
+        .content-section {
+            display: flex;
+            align-items: flex-start; /* Align items to the top */
+            margin: 0; /* Remove margin */
+            padding: 0; /* Remove padding */
+        }
+
+        .image-container {
+            margin: 20px;
+            margin-top: 75px;
+            margin-bottom: 100px;
+            margin-left: 100px;
+            margin-right: 150px;
+            flex: 0 0 200px; /* Set a fixed width for the image container */
+        }
+
+        .image-container img {
+            max-width: 130%;
+            height: auto;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition for hover effect */
+        }
+
+        .image-container img:hover {
+            transform: scale(1.05); /* Slightly scale up the image */
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.2); /* Enhance the shadow */
+        }
+
+.text-content {
+    background-color: rgba(238, 244, 214, 0.9); /* Make text-content slightly transparent */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    max-width: 800px;
+    margin-top: 75px;
+    margin-bottom: 100px;
+    margin-left: 0;
+    margin-right: 20px; /* Adjusted margin */
+    flex: 2; /* Allow the text content to grow more */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition for hover effect */
+}
+
+        .text-content:hover {
+            transform: scale(1.02); /* Slightly scale up the text content */
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.2); /* Enhance the shadow */
+        }
+
+        .text-content p {
+            font-size: 18px;
+            font-family: serif;
+            margin: 10px 0;
+        }
+
+
+footer {
+    background-color:floralwhite; /* Make footer slightly transparent */
+    padding: 20px;
+    text-align: center;
+}
+
+
+        .footer-content {
+            display: flex;
+            justify-content: space-around;
+        }
+
+        .contact-info, .social-media {
+            margin-bottom: 20px;
+        }
+
+        .contact-info h2, .social-media h2 {
+            margin-bottom: 10px;
+        }
+
+        .contact-info p {
+            margin: 5px 0;
+        }
+
+        .social-media ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .social-media ul li {
+            display: inline;
+            margin-right: 10px;
+        }
+
+        .social-media ul li:last-child {
+            margin-right: 0;
+        }
+
+        .social-media a {
+            text-decoration: none;
+            color: #000;
+        }
+
+        .social-media a:hover {
+            color: #555;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+            <li class="logo"><a href="index.html"><img src="favicon.ico" alt="GMO Logo"></a></li>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="WIG.html">What is <span style="color: darkred;">GMO?</span></a></li>
+            <li><a href="GMOFACTS.html" ><span style="color: darkred;">GMO</span> Facts</a></li>
+            <li><a href="GMOSCi.html" class="active"><span style="color: darkred;">GMO</span> Science</a></li>
+            <li><a href="risk.html"><span style="color: darkred;">Risk</span> Status</a></li>
+            <li><a href="about.html"><i class="fas fa-info-circle"></i></a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="hero-section">
+            <!-- <img src="grocery.webp" alt="Market Image"> -->
+        </section>
+        <section class="content-section">
+            <div class="image-container">
+                <img src="bato.jpg" alt="Image related to GMO science">
+            </div>
+            <div class="text-content">
+                <h2 style="font-family: serif;"><span style="color: darkred;">GMO</span> SCIENCE</h2>
+                <p>There is no scientific consensus on the safety of GMOs.</p>
+                <p>According to a 2015 statement signed by 300 scientists, physicians and scholars, the claim of scientific consensus on GMOs frequently repeated in the media is “an artificial construct that has been falsely perpetuated.” To date, there have been no epidemiological studies investigating potential effects of GMO food on human health.</p>
+                <p>Most of the research used to claim that GMOs are safe has been performed by biotechnology companies.</p>
+                <p>A comprehensive review of peer-reviewed animal feeding studies of GMOs found roughly an equal number of research groups raising concerns about genetically engineered foods and those suggesting GMOs were as safe and nutritious as conventional foods.</p>
+                <p>The review also found that most studies finding GMOs foods the same as conventional foods were performed by biotechnology companies or their associates.</p>
+                <p>For a comprehensive overview of the available research on GMOs, please download the report “GMO Myths & Truths” published by three leading researchers at Earth Open Source.</p>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="footer-content">
+            <div class="contact-info">
+                <h2>Contact Us</h2>
+                <p>Email: ITGMO@gmail.com</p>
+                <p>Phone: 123-456-7890</p>
+            </div>
+            <div class="social-media">
+                <h2>Follow Us</h2>
+                <ul>
+                    <li><a href="#">Facebook</a></li>
+                    <li><a href="#">Twitter</a></li>
+                    <li><a href="#">Instagram</a></li>
+                </ul>
+            </div>
+        </div>
+        <p>&copy; 2024 Genetically Modified Organisms. All rights reserved.</p>
+    </footer>
+</body>
+</html>
